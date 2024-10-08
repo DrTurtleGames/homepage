@@ -7,10 +7,10 @@ body {
 }
 
 header {
-    background-color: #004d40;
+    background-color: #030025;  /*001e30*/
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1px 0;
 }
 
 header h1 {
@@ -27,7 +27,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #1c1c1c;  /*1c1c1c*/
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -60,7 +60,7 @@ nav a:hover, .language-select:hover {
 
 section {
     padding: 60px 20px;
-    min-height: 500px;
+    min-height: 200px;
 }
 
 .game-section {
@@ -111,4 +111,19 @@ footer p {
 
 .download-btn:hover {
     background-color: #45a049;
+}
+
+/* Container fürs Zentrieren */
+.center-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }

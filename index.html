@@ -17,28 +17,36 @@
                 "ÜBER_DG_TEXT1": "Dark Galaxy ist ein action Roguelike Top-Down-Shooter. Du steuerst eine Weltraumdrohne, um gegen die Minaripoden, eine insektoide Spezies, zu kämpfen. Erhelle die Dunkelheit und werde stärker, indem du zu verschiedenen Sternensystemen reist. Kannst du unsere Galaxie von den Invasoren befreien?",
                 "ÜBER_DG_TEXT2": "Erscheinungsdatum: 28. August 2024 (Early Access)",
                 "ÜBER_DG_TEXT3": "Plattform: PC (Steam)",
+                "ÜBER_DG_TEXT4": "Status: In Entwicklung",
                 "ÜBER_ILL_TEXT1": "Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner Illustris zu sammeln.",
                 "ÜBER_ILL_TEXT2": "Erscheinungsdatum: Es steht noch in den Sternen",
                 "ÜBER_ILL_TEXT3": "Plattform: PC (Steam)",
+                "ÜBER_ILL_TEXT4": "Status: Zurzeit nicht in Entwicklung",
                 "ÜBER_OE_TEXT1": "Ein Arcade Spiel, wo ein Satellit gesteuert wird. Sammel Sternenkraft und weiche Asteroiden aus und schlage dabei deinen eigenen Highscore! Leider wurde mein Entwickler-Konto im Google Play Store gesperrt und gelöscht, weshalb das Spiel mittlerweile nicht mehr im Google Play Store verfügbar ist. Weiter unten gibt es einen Link mit dem Du das Spiel im .apk Format runterladen und es auf einem Android Gerät spielen kannst.",
                 "ÜBER_OE_TEXT2": "Erscheinungsdatum: Jänner 2021",
                 "ÜBER_OE_TEXT3": "Plattform: Android (Google Play Store)",
+                "ÜBER_OE_TEXT4": "Status: Entwicklung abgeschlossen",
                 "ÜBER_CONTACT": "Kontakt",
                 "ÜBER_CONTACT2": "Kontakt",
+                "ÜBER_IMPRESSUM": "Impressum",
                 "ÜBER_DOWNLOAD1": "Orbital Evation (Version 1.3) herunterladen"
             },
             "en": {
                 "ÜBER_DG_TEXT1": "Dark Galaxy is an action based rogue-like top-down shooter. You pilot a space drone to oppose the insectoid like species called Minaripods. Illuminate the darkness and get stronger by travelling to different star systems. Can you free our galaxy from the invaders?",
                 "ÜBER_DG_TEXT2": "Release Date: August 28th 2024 (Ealy Access)",
                 "ÜBER_DG_TEXT3": "Platform: PC (Steam)",
+                "ÜBER_DG_TEXT4": "Status: In development",
                 "ÜBER_ILL_TEXT1": "A foreign civilisation sent their fleet from the other end of this galaxy to exterminate humanity. Pilot the VELOX starfighter to defend planets and to investigate more information about the enemy's supreme leader called Illustris.",
                 "ÜBER_ILL_TEXT2": "Release Date: It is written in the stars",
                 "ÜBER_ILL_TEXT3": "Platform: PC (Steam)",
+                "ÜBER_ILL_TEXT4": "Status: Currently not in development",
                 "ÜBER_OE_TEXT1": "An arcade game where you control a satellite. Collect star power, avoid asteroids, and beat your own high score! Unfortunately, my developer account on the Google Play Store was suspended and deleted, which is why the game is no longer available in the Google Play Store. Below, there is a link where you can download the game in .apk format and play it on an Android device.",
                 "ÜBER_OE_TEXT2": "Release Date: January 2021",
                 "ÜBER_OE_TEXT3": "Platform: Android (Google Play Store)",
+                "ÜBER_OE_TEXT4": "Status: Development finished",
                 "ÜBER_CONTACT": "Contact",
                 "ÜBER_CONTACT2": "Contact",
+                "ÜBER_IMPRESSUM": "Legal Notice",
                 "ÜBER_DOWNLOAD1": "Download Orbital Evation (Version 1.3)"
             }
         };
@@ -65,14 +73,18 @@
             document.getElementById("ÜBER_DG_TEXT1").innerText = translations[lang]["ÜBER_DG_TEXT1"];
             document.getElementById("ÜBER_DG_TEXT2").innerText = translations[lang]["ÜBER_DG_TEXT2"];
             document.getElementById("ÜBER_DG_TEXT3").innerText = translations[lang]["ÜBER_DG_TEXT3"];
+            document.getElementById("ÜBER_DG_TEXT4").innerText = translations[lang]["ÜBER_DG_TEXT4"];
             document.getElementById("ÜBER_ILL_TEXT1").innerText = translations[lang]["ÜBER_ILL_TEXT1"];
             document.getElementById("ÜBER_ILL_TEXT2").innerText = translations[lang]["ÜBER_ILL_TEXT2"];
             document.getElementById("ÜBER_ILL_TEXT3").innerText = translations[lang]["ÜBER_ILL_TEXT3"];
+            document.getElementById("ÜBER_ILL_TEXT4").innerText = translations[lang]["ÜBER_ILL_TEXT4"];
             document.getElementById("ÜBER_OE_TEXT1").innerText = translations[lang]["ÜBER_OE_TEXT1"];
             document.getElementById("ÜBER_OE_TEXT2").innerText = translations[lang]["ÜBER_OE_TEXT2"];
             document.getElementById("ÜBER_OE_TEXT3").innerText = translations[lang]["ÜBER_OE_TEXT3"];
+            document.getElementById("ÜBER_OE_TEXT4").innerText = translations[lang]["ÜBER_OE_TEXT4"];
             document.getElementById("ÜBER_CONTACT").innerText = translations[lang]["ÜBER_CONTACT"];
             document.getElementById("ÜBER_CONTACT2").innerText = translations[lang]["ÜBER_CONTACT"];
+            document.getElementById("ÜBER_IMPRESSUM").innerText = translations[lang]["ÜBER_IMPRESSUM"];
             document.getElementById("ÜBER_DOWNLOAD1").innerText = translations[lang]["ÜBER_DOWNLOAD1"];
         }
 
@@ -97,9 +109,13 @@
     </nav>
 
     <header>
-        <h1>DrTurtle Games</h1>
-        <img src="logo.png" alt="Logo" style="height: 80px;">
-        <p>Dominik Drozdz</p>
+        <div class="center-header">
+            <img src="Bilder/logo.png" alt="Logo" style="height: 240px;">
+                <div>
+                    <h1>DrTurtle Games</h1>
+                    <p>Dominik Drozdz</p>
+                </div>
+        </div>
     </header>
 
     <section id="dark_galaxy" class="game-section">
@@ -107,7 +123,8 @@
         <p id="ÜBER_DG_TEXT1">Dark Galaxy ist ein action Roguelike Top-Down-Shooter. Du steuerst eine Weltraumdrohne, um gegen die Minaripoden, eine insektoide Spezies, zu kämpfen. Erhelle die Dunkelheit und werde stärker, indem du zu verschiedenen Sternensystemen reist. Kannst du unsere Galaxie von den Invasoren befreien?</p>
         <p id="ÜBER_DG_TEXT2">Erscheinungsdatum: 28. August 2024 (Early Access)</p>
         <p id="ÜBER_DG_TEXT3">Plattform: PC (Steam)</p>
-        <img src="darkgalaxy01.png" alt="Dark Galaxy" width="400">
+        <p id="ÜBER_DG_TEXT4">Status: In Entwicklung</p>
+        <img src="Bilder/darkgalaxy01.png" alt="Dark Galaxy" width="400">
         <p>Link: <a href="https://store.steampowered.com/app/2532830/Dark_Galaxy/">Dark Galaxy</a></p>
     </section>
 
@@ -116,7 +133,8 @@
         <p id="ÜBER_ILL_TEXT1">Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner "Illustris" zu sammeln.</p>
         <p id="ÜBER_ILL_TEXT2">Erscheinungsdatum: Es steht noch in den Sternen</p>
         <p id="ÜBER_ILL_TEXT3">Plattform: PC (Steam)</p>
-        <img src="illustris01.png" alt="Illustris" style="width: 400px; height: auto;">
+        <p id="ÜBER_ILL_TEXT4">Status: Zurzeit nicht in Enwicklung</p>
+        <img src="Bilder/illustris01.png" alt="Illustris" style="width: 400px; height: auto;">
         <p>Link: <a href="https://store.steampowered.com/app/2115680/Illustris/">Illustris</a></p>
     </section>
 
@@ -125,7 +143,8 @@
         <p id="ÜBER_OE_TEXT1">Ein arcade Spiel, wo ein Satellit gesteuert wird. Sammelt Sternenkraft und weicht Asteroiden aus und schlage deinen eigenen Highscore!</p>
         <p id="ÜBER_OE_TEXT2">Erscheinungsdatum: Jänner 2021</p>
         <p id="ÜBER_OE_TEXT3">Plattform: Android (Google Play Store)</p>
-        <img src="orbitalevation01.jpg" alt="Orbital Evation" style="width: 400px; height: auto;">
+        <p id="ÜBER_OE_TEXT4">Status: Enwicklung abgeschlossen</p>
+        <img src="Bilder/orbitalevation01.jpg" alt="Orbital Evation" style="width: 400px; height: auto;">
         <p> </p>
         <p> </p>
         <p> </p>
@@ -134,11 +153,26 @@
 
     <section id="kontakt" class="game-section">
         <h2 id="ÜBER_CONTACT2">Kontakt</h2>
-        <p>Email: <a href="mailto:drturtle.contact@gmail.com">drturtle.contact@gmail.com</a></p>
+        <div class="center-container">
+            <img src="Bilder/gmail.png" alt="GMail_Logo" style="width: 32px; height: auto;">
+            <a href="mailto:drturtle.contact@gmail.com">drturtle.contact@gmail.com</a>
+        </div>
+        <p> </p>
+        <p> </p>
+        <div class="center-container">
+            <img src="Bilder/youtube.png" alt="YT_Logo" style="width: 32px; height: auto;">
+            <a href="https://www.youtube.com/@drturtlegames" target="_blank">https://www.youtube.com/@drturtlegames</a>
+        </div>
+        <p> </p>
+        <p> </p>
+        <div class="center-container">
+            <img src="Bilder/instagram.png" alt="Instagram_Logo" style="width: 32px; height: auto;">
+            <a href="https://www.instagram.com/drturtlegames/" target="_blank">https://www.instagram.com/drturtlegames/</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 DrTurtle Games | <a href="mailto:drturtle.contact@gmail.com">drturtle.contact@gmail.com</a></p>
+        <p>&copy; 2024 DrTurtle Games | <a id="ÜBER_IMPRESSUM" href="impressum.html" target="_blank">Impressum</a></p>
     </footer>
 
 </body>

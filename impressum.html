@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+
+    <script>
+        const translations = {
+            "de": {
+                "ÜBER_TEXT0": "Impressum",
+                "ÜBER_TEXT1": "Datenschutzerklärung",
+                "ÜBER_TEXT2": "Diese Webseite sammelt keine personenbezogenen Daten und verwendet keine Cookies. Es werden keine Tracking-Tools oder Analyse-Dienste wie Google Analytics eingesetzt.",
+                "ÜBER_TEXT3": "Kontakt",
+            },
+            "en": {
+                "ÜBER_TEXT0": "Legal Notice",
+                "ÜBER_TEXT1": "Privacy Policy",
+                "ÜBER_TEXT2": "This website does not collect any personal data and does not use cookies. No tracking tools or analytics services such as Google Analytics are used.",
+                "ÜBER_TEXT3": "Contact",
+            }
+        };
+
+        function detectLanguage() {
+            let userLang = navigator.language || navigator.userLanguage;
+            userLang = userLang.substring(0, 2);
+            if (!translations[userLang]) {
+                userLang = 'en';
+            }
+            changeLanguage(userLang);
+        }
+        function changeLanguage(lang) {
+            document.getElementById("ÜBER_TEXT0").innerText = translations[lang]["ÜBER_TEXT0"];
+            document.getElementById("ÜBER_TEXT1").innerText = translations[lang]["ÜBER_TEXT1"];
+            document.getElementById("ÜBER_TEXT2").innerText = translations[lang]["ÜBER_TEXT2"];
+            document.getElementById("ÜBER_TEXT3").innerText = translations[lang]["ÜBER_TEXT3"];
+        }
+        window.onload = detectLanguage;
+    </script>
+</head>
+
+<body>
+
+    <select onchange="changeLanguage(this.value)">
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+    </select>
+
+    <h1 id="ÜBER_TEXT0">Impressum</h1>
+    <section id="datenschutzerklaerung">
+        <h2 id="ÜBER_TEXT1">Datenschutzerklärung</h2>
+        <p id="ÜBER_TEXT2">Diese Webseite sammelt keine personenbezogenen Daten und verwendet keine Cookies. Es werden keine Tracking-Tools oder Analyse-Dienste wie Google Analytics eingesetzt.</p>
+    </section>
+
+    <section id="kontakt">
+        <h2 id="ÜBER_TEXT3">Kontakt</h2>
+        <p>Dominik Drozdz</p>
+        <a href="mailto:drturtle.contact@gmail.com">drturtle.contact@gmail.com</a>
+    </section>
+</body>
+
+</html>
