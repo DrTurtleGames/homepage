@@ -127,3 +127,10 @@ footer p {
     align-items: center;
     gap: 50px;
 }
+
+/* Für Bildschirme mit weniger als 600px Breite (z.B. Smartphones) */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;  /* Bilder sollen die volle Breite des Containers einnehmen */
+    }
+}
