@@ -181,4 +181,27 @@ footer p {
         width: 16px;
         height: auto;
     }
+    .center-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+    }
+    .download-btn {
+        display: inline-block;
+        padding: 1px 2px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 2px;
+        font-size: 0.8em;
+    }
+    header h1 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    header p {
+        font-size: 1em;
+        margin: 0;
+    }
 }
