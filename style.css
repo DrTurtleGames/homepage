@@ -78,6 +78,11 @@ section {
     margin-top: 10px;
 }
 
+.game-section img {
+    width: 400px;
+    height: auto;
+}
+
 footer {
     background-color: #004d40;
     color: white;
@@ -128,9 +133,18 @@ footer p {
     gap: 50px;
 }
 
+.center-header img {
+    width: 240px;
+    height: auto;
+}
+
 /* Für Bildschirme mit weniger als 600px Breite (z.B. Smartphones) */
 @media only screen and (max-width: 600px) {
-    img {
-        width: 100%;  /* Bilder sollen die volle Breite des Containers einnehmen */
+    .center-header img {
+        width: 15%;  /* Bilder sollen die volle Breite des Containers einnehmen */
+    }
+    .game-section img {
+        width: 90%;
+        height: auto;
     }
 }
