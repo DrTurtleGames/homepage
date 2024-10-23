@@ -36,7 +36,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 5px;
     flex-wrap: wrap; /* Flexibles Layout für kleine Bildschirme */
 }
 
@@ -57,9 +57,21 @@ ul {
 
 .description {
     flex: 1;
-    max-width: 75%;
+    max-width: 400px;
     padding: 20px;
     text-align: left;
+}
+
+.description-pic {
+    flex: 1;
+    max-width: 560px;
+    padding: 20px;
+    padding-right: 80px;
+}
+
+.description-pic img {
+    width: 100%;
+    height: auto;
 }
 
 .download-column {
@@ -70,21 +82,17 @@ ul {
 }
 
 section {
-    padding: 30px 150px;
-    min-height: 0px;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    min-height: 50px;
 }
 
 section h2 {
     color: #004d40;
     border-bottom: 2px solid #004d40;
     padding-bottom: 10px;
-}
-
-footer {
-    background-color: #004d40;
-    color: white;
-    padding: 10px;
-    text-align: center;
 }
 
 .download-btn {
@@ -102,9 +110,18 @@ footer {
     background-color: #45a049;
 }
 
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
 footer a {
     color: white;
     text-decoration: none;
+    font-size: 1em;
 }
 
 footer a:hover {
