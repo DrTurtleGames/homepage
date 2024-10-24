@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover, .language-select:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.language-select {
+    margin-left: auto; /* Damit die Schaltfläche nach rechts rückt */
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #030025;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.center-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.center-header img {
+    width: 240px;
+    height: auto;
+}
+
+section {
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    min-height: 50px;
+}
+
+section h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    flex-wrap: wrap; /* Flexibles Layout für kleine Bildschirme */
+}
+
+.column-pic {
+    flex: 1;
+    max-width: 560px;
+    padding: 20px;
+    padding-right: 80px;
+}
+
+.column-pic img {
+    width: auto;
+    height: 675px;
+}
+
+.column-description {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+}
+
+.column-pic-oe {
+    flex: 1;
+    max-width: 560px;
+    padding: 20px;
+    padding-right: 80px;
+}
+
+.column-pic-oe img {
+    width: 560px;
+    height: auto;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.last-section {
+    font-size: 0;
+    min-height: 200px;
+}
+
+.last-section img {
+    width: 64px;
+    height: auto;
+    padding: 10px 20px;
+}
+
+.last-section img:hover {
+    width: 72px;
+    height: auto;
+    padding: 6px 20px;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+}
+

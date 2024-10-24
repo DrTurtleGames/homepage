@@ -8,7 +8,7 @@
     <meta name="author" content="DrTurtle Games">
 
     <title>DrTurtle Games</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index_style.css">
 
     <script>
         // Text für beide Sprachen speichern
@@ -18,7 +18,7 @@
                 "ÜBER_DG_TEXT2": "Erscheinungsdatum: 28. August 2024 (Early Access)",
                 "ÜBER_DG_TEXT3": "Plattform: PC (Steam)",
                 "ÜBER_DG_TEXT4": "Status: In Entwicklung",
-                "ÜBER_ILL_TEXT1": "Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner Illustris zu sammeln.",
+                "ÜBER_ILL_TEXT1": "Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner, Illustris, zu sammeln.",
                 "ÜBER_ILL_TEXT2": "Erscheinungsdatum: Es steht noch in den Sternen",
                 "ÜBER_ILL_TEXT3": "Plattform: PC (Steam)",
                 "ÜBER_ILL_TEXT4": "Status: Zurzeit nicht in Entwicklung",
@@ -29,7 +29,7 @@
                 "ÜBER_CONTACT": "Kontakt",
                 "ÜBER_CONTACT2": "Kontakt",
                 "ÜBER_IMPRESSUM": "Impressum",
-                "ÜBER_DOWNLOAD1": "Orbital Evation (Version 1.3) herunterladen"
+                "ÜBER_DOWNLOAD1": "Orbital Evation (V1.3) herunterladen"
             },
             "en": {
                 "ÜBER_DG_TEXT1": "Dark Galaxy is an action based rogue-like top-down shooter. You pilot a space drone to oppose the insectoid like species called Minaripods. Illuminate the darkness and get stronger by travelling to different star systems. Can you free our galaxy from the invaders?",
@@ -47,7 +47,7 @@
                 "ÜBER_CONTACT": "Contact",
                 "ÜBER_CONTACT2": "Contact",
                 "ÜBER_IMPRESSUM": "Legal Notice",
-                "ÜBER_DOWNLOAD1": "Download Orbital Evation (Version 1.3)"
+                "ÜBER_DOWNLOAD1": "Download Orbital Evation (V1.3)"
             }
         };
 
@@ -91,8 +91,8 @@
         // Sprache beim Laden der Seite automatisch erkennen
         window.onload = detectLanguage;
     </script>
-
 </head>
+
 <body>
     <nav>
         <div class="nav-links">
@@ -101,7 +101,7 @@
             <a href="#orbital_evation">Orbital Evation</a>
             <a id="ÜBER_CONTACT" href="#kontakt">Kontakt</a>
         </div>
-        <!-- Sprachumschalter für den Nutzer, falls gewünscht -->
+
         <select onchange="changeLanguage(this.value)">
             <option value="de">Deutsch</option>
             <option value="en">English</option>
@@ -111,66 +111,83 @@
     <header>
         <div class="center-header">
             <img src="Bilder/logo.png" alt="Logo">
-                <div>
-                    <h1>DrTurtle Games</h1>
-                    <p>Dominik Drozdz</p>
-                </div>
+            <div>
+                <h1>DrTurtle Games</h1>
+                <p>Dominik Drozdz</p>
+            </div>
         </div>
     </header>
 
-    <section id="dark_galaxy" class="game-section">
+    <section id="dark_galaxy">
         <h2>Dark Galaxy</h2>
-        <p id="ÜBER_DG_TEXT1">Dark Galaxy ist ein action Roguelike Top-Down-Shooter. Du steuerst eine Weltraumdrohne, um gegen die Minaripoden, eine insektoide Spezies, zu kämpfen. Erhelle die Dunkelheit und werde stärker, indem du zu verschiedenen Sternensystemen reist. Kannst du unsere Galaxie von den Invasoren befreien?</p>
-        <p id="ÜBER_DG_TEXT2">Erscheinungsdatum: 28. August 2024 (Early Access)</p>
-        <p id="ÜBER_DG_TEXT3">Plattform: PC (Steam)</p>
-        <p id="ÜBER_DG_TEXT4">Status: In Entwicklung</p>
-        <img src="Bilder/darkgalaxy01.png" alt="Dark Galaxy">
-        <p><a href="https://store.steampowered.com/app/2532830/Dark_Galaxy/">Dark Galaxy on Steam</a></p>
-        <p><a href="presskit.html" >Press Kit</a></p>
     </section>
 
-    <section id="illustris" class="game-section">
+    <div class="container">
+    <!-- Links das Bild, rechts die Infos -->
+        <div class="column-pic">
+            <img src="Bilder/darkgalaxy01.png" alt="Dark Galaxy">
+        </div>
+        <div class="column-description">
+            <p id="ÜBER_DG_TEXT1">Dark Galaxy ist ein action Roguelike Top-Down-Shooter. Du steuerst eine Weltraumdrohne, um gegen die Minaripoden, eine insektoide Spezies, zu kämpfen. Erhelle die Dunkelheit und werde stärker, indem du zu verschiedenen Sternensystemen reist. Kannst du unsere Galaxie von den Invasoren befreien?</p>
+            <p id="ÜBER_DG_TEXT2">Erscheinungsdatum: 28. August 2024 (Early Access)</p>
+            <p id="ÜBER_DG_TEXT3">Plattform: PC (Steam)</p>
+            <p id="ÜBER_DG_TEXT4">Status: In Entwicklung</p> 
+            <p><a href="https://store.steampowered.com/app/2532830/Dark_Galaxy/" target="_blank">Dark Galaxy on Steam</a></p>
+            <p><a href="presskit.html">Press Kit</a></p>
+        </div>
+    </div>
+
+    <section id="illustris">
         <h2>Illustris</h2>
-        <p id="ÜBER_ILL_TEXT1">Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner "Illustris" zu sammeln.</p>
-        <p id="ÜBER_ILL_TEXT2">Erscheinungsdatum: Es steht noch in den Sternen</p>
-        <p id="ÜBER_ILL_TEXT3">Plattform: PC (Steam)</p>
-        <p id="ÜBER_ILL_TEXT4">Status: Zurzeit nicht in Enwicklung</p>
-        <img src="Bilder/illustris01.png" alt="Illustris">
-        <p><a href="https://store.steampowered.com/app/2115680/Illustris/">Illustris on Steam</a></p>
     </section>
 
-    <section id="orbital_evation" class="game-section">
+    <div class="container">
+    <!-- Links das Bild, rechts die Infos -->
+        <div class="column-pic">
+            <img src="Bilder/illustris01.png" alt="Illustris">
+        </div>
+        <div class="column-description">
+            <p id="ÜBER_ILL_TEXT1">Eine fremde Zivilisation sendete ihre Flotte vom Ende der Galaxis um die Menschheit auszulöschen. Steuere den VELOX Sternenjäger um Planeten zu verteidigen und mehr Informationen über den obersten Anführer der Gegner "Illustris" zu sammeln.</p>
+            <p id="ÜBER_ILL_TEXT2">Erscheinungsdatum: Es steht noch in den Sternen</p>
+            <p id="ÜBER_ILL_TEXT3">Plattform: PC (Steam)</p>
+            <p id="ÜBER_ILL_TEXT4">Status: Zurzeit nicht in Enwicklung</p>
+            <p><a href="https://store.steampowered.com/app/2115680/Illustris/" target="_blank">Illustris on Steam</a></p>
+        </div>
+    </div>
+
+    <section id="orbital_evation">
         <h2>Orbital Evation</h2>
-        <p id="ÜBER_OE_TEXT1">Ein arcade Spiel, wo ein Satellit gesteuert wird. Sammelt Sternenkraft und weicht Asteroiden aus und schlage deinen eigenen Highscore!</p>
-        <p id="ÜBER_OE_TEXT2">Erscheinungsdatum: Jänner 2021</p>
-        <p id="ÜBER_OE_TEXT3">Plattform: Android (Google Play Store)</p>
-        <p id="ÜBER_OE_TEXT4">Status: Enwicklung abgeschlossen</p>
-        <img src="Bilder/orbitalevation01.jpg" alt="Orbital Evation">
-        <p> </p>
-        <p> </p>
-        <p> </p>
-        <a id="ÜBER_DOWNLOAD1" href="Orbital_Evation_v1_3.apk" download class="download-btn">Orbital Evation (Version 1.3) herunterladen</a>
     </section>
 
-    <section id="kontakt" class="last-section">
+    <div class="container">
+    <!-- Links das Bild, rechts die Infos -->
+        <div class="column-pic-oe">
+            <img src="Bilder/orbitalevation01.jpg" alt="Orbital Evation">
+        </div>
+        <div class="column-description">
+            <p id="ÜBER_OE_TEXT1">Ein arcade Spiel, wo ein Satellit gesteuert wird. Sammelt Sternenkraft und weicht Asteroiden aus und schlage deinen eigenen Highscore!</p>
+            <p id="ÜBER_OE_TEXT2">Erscheinungsdatum: Jänner 2021</p>
+            <p id="ÜBER_OE_TEXT3">Plattform: Android (Google Play Store)</p>
+            <p id="ÜBER_OE_TEXT4">Status: Enwicklung abgeschlossen</p>
+            <a id="ÜBER_DOWNLOAD1" href="Orbital_Evation_v1_3.apk" download class="download-btn">Orbital Evation (Version 1.3) herunterladen</a>
+        </div>
+    </div>
+
+    <section id="kontakt">
         <h2 id="ÜBER_CONTACT2">Kontakt</h2>
-        <div class="center-container">
-            <img src="Bilder/gmail.png" alt="GMail_Logo">
-            <a href="mailto:drturtle.contact@gmail.com">drturtle.contact@gmail.com</a>
-        </div>
-        <p> </p>
-        <p> </p>
-        <div class="center-container">
-            <img src="Bilder/youtube.png" alt="YT_Logo">
-            <a href="https://www.youtube.com/@drturtlegames" target="_blank">https://www.youtube.com/@drturtlegames</a>
-        </div>
-        <p> </p>
-        <p> </p>
-        <div class="center-container">
-            <img src="Bilder/instagram.png" alt="Instagram_Logo">
-            <a href="https://www.instagram.com/drturtlegames/" target="_blank">https://www.instagram.com/drturtlegames/</a>
-        </div>
     </section>
+
+    <div class="last-section">
+        <a href="mailto:drturtle.contact@gmail.com" target="_blank">
+            <img src="Bilder/gmail.png" alt="GMail_Logo">
+        </a>
+        <a href="https://www.youtube.com/@drturtlegames" target="_blank">
+            <img src="Bilder/youtube.png" alt="YT_Logo">
+        </a>
+        <a href="https://www.instagram.com/drturtlegames/" target="_blank">
+            <img src="Bilder/instagram.png" alt="Instagram_Logo">
+        </a>
+    </div>
 
     <footer>
         <p>&copy; 2024 DrTurtle Games | <a id="ÜBER_IMPRESSUM" href="impressum.html" target="_blank">Impressum</a></p>
