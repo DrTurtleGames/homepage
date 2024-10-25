@@ -200,6 +200,9 @@ footer p {
         font-size: 1em;
         margin: 0;
     }
+    .container {
+        flex-direction: column;
+    }
     .column-pic {
         flex: 1;
         max-width: 80%;
