@@ -147,16 +147,16 @@ footer a:hover {
     }
     .video-column {
         flex: 1;
-        max-width: 80%;
-        padding: 10px;
+        max-width: 320px;
+        padding: 0px;
+    }
+    .video-column-iframe {
+        width: 320px;
+        height: 180px;
     }
     .description-pic {
         flex: 1;
         max-width: 90%;
         padding: 10px;
-    }
-    .video-column-iframe {
-        width: 320px;
-        height: 180px;
     }
 }
