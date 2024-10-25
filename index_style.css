@@ -101,6 +101,7 @@ section h2 {
 }
 
 .column-pic img {
+    flex: 1;
     width: auto;
     height: 675px;
 }
@@ -126,6 +127,7 @@ section h2 {
 }
 
 .column-pic-oe img {
+    flex: 1;
     width: 560px;
     height: auto;
 }
@@ -150,12 +152,14 @@ section h2 {
 }
 
 .last-section img {
+    flex: 1;
     width: 64px;
     height: auto;
     padding: 10px 20px;
 }
 
 .last-section img:hover {
+    flex: 1;
     width: 72px;
     height: auto;
     padding: 6px 20px;
