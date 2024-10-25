@@ -107,9 +107,15 @@ section h2 {
 
 .column-description {
     flex: 1;
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
-    text-align: left;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.column-description img {
+    width: 150px;
+    height: auto;
 }
 
 .column-pic-oe {
@@ -176,3 +182,46 @@ footer p {
     margin: 0;
 }
 
+/* Für Bildschirme mit weniger als 600px Breite (z.B. Smartphones) */
+@media only screen and (max-width: 600px) {
+    .center-header img {
+        width: 20%;
+        height: auto;
+    }
+    header h1 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    header p {
+        font-size: 1em;
+        margin: 0;
+    }
+    .column-pic img {
+        width: 80%;
+        height: auto;
+    }
+    .column-pic-oe img {
+        width: 90%;
+        height: auto;
+    }
+    .download-btn {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.8em;
+    }
+    .last-section img {
+        width: 16px;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .last-section img:hover {
+        width: 16px;
+        height: auto;
+        padding: 10px 20px;
+    }
+}
