@@ -43,10 +43,12 @@ nav a:hover, .language-select:hover {
 }
 
 header {
-    background-color: #030025;
+    // background-color: #030025;
+    background: radial-gradient(circle at top center, #1a2f78, #0d0d0d 70%);
     color: white;
     text-align: center;
     padding: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,1.0);
 }
 
 header h1 {
