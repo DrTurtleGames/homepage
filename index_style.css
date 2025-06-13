@@ -17,6 +17,8 @@ nav {
     top: 0;
     z-index: 1000;
     margin: 0;
+    padding: 3px;
+    font-size: 1.0em;
 }
 
 nav a {
@@ -191,8 +193,17 @@ footer p {
 /* Für Bildschirme mit weniger als 600px Breite (z.B. Smartphones) */
 @media only screen and (max-width: 600px) {
     nav {
-        padding: 6px 12px;
-        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1c1c1c;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin: 0;
+        padding: 0px;
+        font-size: 0.55em;
     }
     .center-header img {
         width: 20%;
