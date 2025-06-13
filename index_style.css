@@ -203,7 +203,15 @@ footer p {
         z-index: 1000;
         margin: 0;
         padding: 0px;
-        font-size: 0.55em;
+        font-size: 0.6em;
+    }
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 6px;
+        text-decoration: none;
     }
     .center-header img {
         width: 20%;
