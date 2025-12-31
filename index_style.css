@@ -46,7 +46,7 @@ nav a:hover, .language-select:hover {
 
 header {
     // background-color: #030025;
-    background: radial-gradient(circle at top center, #1a2f78, #0d0d0d 70%);
+    background: radial-gradient(circle at top center, #004068, #1c1c1c 80%);
     color: white;
     text-align: center;
     padding: 1px;
@@ -106,6 +106,7 @@ section h2 {
 
 .column-pic img {
     flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,1.0);
     width: auto;
     height: 675px;
 }
@@ -132,6 +133,7 @@ section h2 {
 
 .column-pic-oe img {
     flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     width: 560px;
     height: auto;
 }
@@ -164,9 +166,7 @@ section h2 {
 
 .last-section img:hover {
     flex: 1;
-    width: 72px;
-    height: auto;
-    padding: 6px 20px;
+    transform: translateY(-6px);
 }
 
 footer {
